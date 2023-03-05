@@ -1,7 +1,12 @@
 {
   "name": "demo-2.1",
   "version": "0.1.0",
-  "private": true,
+  "license": "GPL-3.0-only",
+  "author": "Alexander Liu <a@alexanderliu.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexanderl19/demo-2.1"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
