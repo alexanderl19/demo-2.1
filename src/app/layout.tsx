@@ -1,8 +1,9 @@
 import "server-only";
 
+import "./global.scss";
+
 import SupabaseListener from "@/components/supabase-listener";
 import SupabaseProvider from "@/components/supabase-provider";
-import "./globals.css";
 import { createClient } from "@/utils/supabase-server";
 
 export const metadata = {
