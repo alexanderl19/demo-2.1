@@ -2,7 +2,9 @@ import { NextResponse } from "next/server";
 import { parse } from "node-html-parser";
 import { supabase } from "@/utils/supabase-secret";
 
-export async function GET(request: Request) {
+export const dynamic = "force-dynamic";
+
+export async function GET() {
   if (process.env.NODE_ENV !== "development")
     throw new Error("This endpoint is only available in development.");
 

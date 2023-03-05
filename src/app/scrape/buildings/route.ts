@@ -2,10 +2,12 @@ import { NextResponse } from "next/server";
 import { parse } from "node-html-parser";
 import { supabase } from "@/utils/supabase-secret";
 
+export const dynamic = "force-dynamic";
+
 const baseUrl = "http://www.myatlascms.com/map/accessible.php?id=463&cId=56435";
 const baseSelector = ["body", "div", "form", "ol", "li"];
 
-export async function GET(request: Request) {
+export async function GET() {
   if (process.env.NODE_ENV !== "development")
     throw new Error("This endpoint is only available in development.");
 
